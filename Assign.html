@@ -2,7 +2,7 @@
 <html>
  <head>
     <title>Calculator</title>
-    <link rel="stylesheet" href="Assign.css">
+    <link rel="stylesheet" href="css/Assign.css">
  </head>
  <body>
  <p class="js-calculation"></p>
@@ -148,18 +148,7 @@
    </button>
    </p>
             
-   <script>
-    let calculation = localStorage.getItem("calculation") || "";
-    displayCalculation();
-    function updateCalculation(value) {
-    calculation += value;
-    displayCalculation();
-    localStorage.setItem("calculation", calculation);
-    }
-    function displayCalculation() {
-    document.querySelector(".js-calculation").innerHTML = calculation;
-    }
-    </script>
+   <script src="script/Assign.js"></script>
  </div>
 </div>
     </body>
